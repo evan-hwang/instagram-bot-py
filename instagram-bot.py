@@ -9,7 +9,7 @@ class InstagramBot:
     def __init__(self, username, password):
         self.username = username
         self.password = password
-        self.driver = webdriver.Chrome("/usr/local/bin/chromedriver")
+        self.driver = webdriver.Chrome("webdriver 주소")
 
     def closeBrowser(self):
         self.driver.close()
@@ -78,7 +78,7 @@ password = "password"
 bot = InstagramBot(username, password)
 bot.login()
 
-hashtags = ['좋아요반사']
+hashtags = ['원하는 태그명']
 
 while True:
     try:
